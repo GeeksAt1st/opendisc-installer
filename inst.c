@@ -17,7 +17,7 @@ char **files;
 
 int main ( void )
 {
-    puts ( "OpenDisc 一键安装工具 by Geeks@一中（东莞市第一中学信息技术社）\n本程序很猥琐但很强大，同样自由。版本号 0.0.0.0\n" );
+    puts ( "OpenDisc 一键安装工具 by Geeks@一中（东莞市第一中学信息技术社）\n本程序很猥琐但很强大，同样自由。版本号 0.0.0.1\n" );
     
     init();
     
@@ -59,8 +59,6 @@ void init ( void )
     for ( tmp = 0; tmp < FILE_SUM; tmp++ )
         files[tmp] = ( char * ) calloc ( LENGTH, sizeof ( char ) );
     
-    puts ( "正在初始化程序 ..." );
-    
     system ( "title OpenDisc ver 1.0-win32" );
     
     files[0] = "LibreOffice_4.3.0_Win_x86.msi",
@@ -76,8 +74,7 @@ void init ( void )
     files[10] = "FileZilla_3.9.0.3_win32-setup.exe",
     files[11] = "npp.6.6.8.Installer.exe";
     
-    
-    printf ( "检查文件是否存在 ..." );
+
     for ( tmp = 0; tmp < FILE_SUM; tmp++ )
     {
         switch ( access ( files[tmp], X_OK ) )
@@ -91,7 +88,6 @@ void init ( void )
                 exit ( 1 );
         }
     }
-    printf ( "  成功\n" );
     
     puts ( "校验文件正确性 ..." );
     if ( system ( "src\\md5sum.exe -c src\\checksum" ) != 0 )

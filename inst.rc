@@ -22,8 +22,8 @@ LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
 //
 LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
 1 VERSIONINFO
-    FILEVERSION     0,0,0,0
-    PRODUCTVERSION  0,0,0,0
+    FILEVERSION     0,0,0,1
+    PRODUCTVERSION  0,0,0,1
     FILEOS          VOS_NT_WINDOWS32
     FILETYPE        VFT_APP
     FILESUBTYPE     VFT2_UNKNOWN
@@ -37,14 +37,14 @@ LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
             VALUE "Comments", "OpenDisc One-Key Installer"
             VALUE "CompanyName", "Geeks@一中"
             VALUE "FileDescription", "OpenDisc One-Key Installer"
-            VALUE "FileVersion", "0.0.0.0"
+            VALUE "FileVersion", "0.0.0.1"
             VALUE "InternalName", "inst"
             VALUE "LegalCopyright", "(C) 2014 Geeks@一中"
             VALUE "LegalTrademarks", ""
             VALUE "OriginalFilename", "inst.exe"
             VALUE "PrivateBuild", ""
             VALUE "ProductName", "OpenDisc One-Key Installer"
-            VALUE "ProductVersion", "0.0.0.0"
+            VALUE "ProductVersion", "0.0.0.1"
             VALUE "SpecialBuild", ""
         }
     }
