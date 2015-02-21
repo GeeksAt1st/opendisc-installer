@@ -49,6 +49,5 @@ if /i "%choice%"==""  exit /b 1
 if /i "%choice%"=="c" exit /b 2
 if /i "%choice%"=="a" exit /b 3
 if /i "%choice%"=="e" exit /b 4
-set choice=
 goto _show_interface_and_judge
 
