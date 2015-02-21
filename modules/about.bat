@@ -4,14 +4,6 @@
 :: This program is licensed under WTFPL; you can DO WHAT THE FUCK YOU WANT TO, as you please.
 
 
-:: All variables used:
-:: - lang
-::
-:: All procedures' prototype:
-:: - _set_language
-:: - _set_window_attr
-
-
 @echo off
 
 cls
@@ -31,7 +23,7 @@ if "%lang%"=="1" (
     echo 本软件使用 WTFPL 授权。你他妈的想干嘛干嘛好了。
     echo.
     echo 参与开发人员：
-    echo 黎民雍 ^< lmy441900@gmail.com ^>
+    echo 黎民雍 ^<lmy441900@gmail.com^>
     echo.
     echo 按下任意键返回主屏幕。
 )
@@ -51,7 +43,7 @@ if "%lang%"=="2" (
     echo This program is licensed under WTFPL. You just DO WHAT THE FUCK YOU WANT TO.
     echo.
     echo Developers:
-    echo Junde Yi ^< lmy441900@gmail.com ^>
+    echo Junde Yi ^<lmy441900@gmail.com^>
     echo.
     echo Press any key to return.
 )

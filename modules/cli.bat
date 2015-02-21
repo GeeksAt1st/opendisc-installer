@@ -4,17 +4,11 @@
 :: This program is licensed under WTFPL; you can DO WHAT THE FUCK YOU WANT TO, as you please.
 
 
-:: All variables used:
-:: - choice
-::
-:: All procedures' prototype:
-:: - _show_interface_and_judge
-
-
 @echo off
 
 :_show_interface_and_judge
 cls
+set choice=
 if "%lang%"=="1" (
     echo  =====================＞＞＞ 欢迎使用 OpenDisc 安装程序 ＜＜＜======================
     echo.

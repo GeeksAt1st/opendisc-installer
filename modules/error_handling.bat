@@ -4,9 +4,6 @@
 :: This program is licensed under WTFPL; you can DO WHAT THE FUCK YOU WANT TO, as you please.
 
 
-:: All variables used:
-:: - lang
-::
 :: All procedures' prototype:
 :: - (MAIN)
 ::     - procedure_failure   %error_procedure% %return_code%

@@ -4,13 +4,6 @@
 :: This program is licensed under WTFPL; you can DO WHAT THE FUCK YOU WANT TO, as you please.
 
 
-:: All variables used:
-:: - Nope.
-::
-:: All procedures' prototype:
-:: - Nope.
-
-
 @echo off
 
 if not exist "checksums.md5" call modules\error_handling.bat "file_not_found" %0 checksums.md5

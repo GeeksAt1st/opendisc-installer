@@ -4,19 +4,6 @@
 :: This program is licensed under WTFPL; you can DO WHAT THE FUCK YOU WANT TO, as you please.
 
 
-:: All variables used:
-:: - Nope.
-::
-:: All procedures' prototype:
-:: - _check_valid
-:: - _err_file_not_found %which_file%
-
-:: Return codes:
-:: - 0: Success
-:: - 1: General error
-:: - 2: File not found error
-
-
 @echo off
 
 :: First check if modules are valid. If not, abort.
