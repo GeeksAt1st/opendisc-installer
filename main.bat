@@ -32,10 +32,8 @@ call modules\cli.bat
 if %errorlevel% equ 1 call modules\install-all.bat
 if %errorlevel% equ 2 call modules\install-custom.bat
 if %errorlevel% equ 3 call modules\about.bat
+if %errorlevel% equ 4 exit 0
 goto loop
-
-pause
-exit /b 0
 
 
 
@@ -43,11 +41,16 @@ exit /b 0
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Procedures
 :_check_valid
+:: FIXME: Using "for" loop may be tidier here.
 if not exist modules call :_err_file_not_found "modules\"
 if not exist modules\error_handling.bat call :_err_file_not_found "modules\error_handling.bat"
 if not exist modules\init.bat call :_err_file_not_found "modules\init.bat"
 if not exist modules\chkfiles.bat call :_err_file_not_found "modules\chkfiles.bat"
-goto :EOF
+if not exist modules\cli.bat call :_err_file_not_found "modules\cli.bat"
+if not exist modules\install-all.bat call :_err_file_not_found "modules\install-all.bat"
+if not exist modules\install-custom.bat call :_err_file_not_found "modules\install-custom.bat"
+if not exist modules\about.bat call :_err_file_not_found "modules\about.bat"
+exit /b
 
 :_err_file_not_found
 echo *** 错误：致命错误：模块或文件 %~1 未找到。中止。
