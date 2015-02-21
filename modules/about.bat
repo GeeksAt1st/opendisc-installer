@@ -36,8 +36,8 @@ if "%lang%"=="2" (
     echo                        \___/^| .__/ \___^|_^| ^|_^|____/^|_^|___/\___^|
     echo                             ^|_^|
     echo.
-    echo                        OpenDisc online updater ^& installer 0.0.0.2
-    echo                        Copyleft 2014-2015  Geeks@Dongguan No.1 SHS
+    echo                      OpenDisc online updater ^& installer 0.0.0.2
+    echo                      Copyleft 2014-2015  Geeks@Dongguan No.1 SHS
     echo.
     echo This program is suitable for OpenDisc-winxx-cn, which is maintained by us.
     echo This program is licensed under WTFPL. You just DO WHAT THE FUCK YOU WANT TO.
